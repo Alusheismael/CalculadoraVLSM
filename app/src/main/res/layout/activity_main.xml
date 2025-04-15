@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etIpAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección IP (ej: 192.168.1.0)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etSubnetMask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Máscara de red (ej: 255.255.255.0)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etSubnets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de subredes"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF6666"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Resultados aparecerán aquí"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+</ScrollView>
